@@ -22,4 +22,4 @@ This board is the second board I have been working on and adding the the open so
 
 If you have any questions, you can open up an issue in the <a href="https://github.com/skerr92/msp432-feather/issues">Issues</a> tab of this repository!
 
-Please check back to this Readme file to get additional resources for working with the MSP432P4xxx microcontroller.
+Please check the <a href="https://github.com/skerr92/msp432-feather/tree/master/technical%20documentation">Technical Documentation</a> for additional resources for working with the MSP432P4xxx microcontroller.
