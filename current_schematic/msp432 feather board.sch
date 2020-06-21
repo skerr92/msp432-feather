@@ -12077,8 +12077,8 @@ N-Channel Logic Level Enhancement Mode Field Effect Transistor</description>
 <part name="SUPPLY7" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VCC" device="" value="+5V"/>
 <part name="SUPPLY8" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VCC" device="" value="+3.3V"/>
 <part name="C9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/2" value="0.1uF"/>
-<part name="C10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/2" value="50nF"/>
-<part name="C11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="5uF"/>
+<part name="C10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/2" value="47nF"/>
+<part name="C11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="4.7uF"/>
 <part name="SUPPLY13" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VCC" device="" value="+3.3V"/>
 <part name="SUPPLY3" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VCC" device="" value="+3.3V"/>
 <part name="SUPPLY4" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VCC" device="" value="+3.3V"/>
@@ -12130,7 +12130,7 @@ N-Channel Logic Level Enhancement Mode Field Effect Transistor</description>
 <part name="U1" library="DMG3415U-7" deviceset="DMG3415U-7" device="X2-DFN2015-3" value="DMG3415U-7X2-DFN2015-3"/>
 <part name="SUPPLY30" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="U$4" library="MBR0520LT1G" deviceset="MBR0520LT1G" device=""/>
-<part name="R9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3"/>
+<part name="R9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="100K"/>
 <part name="U2" library="MCP73831-2ACI" deviceset="MCP73831T-2ACI/OT" device=""/>
 <part name="R10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="2K2"/>
 <part name="R11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="470"/>
@@ -12149,6 +12149,9 @@ N-Channel Logic Level Enhancement Mode Field Effect Transistor</description>
 <wire x1="-172.72" y1="-101.6" x2="210.82" y2="-101.6" width="0.1524" layer="94"/>
 <wire x1="210.82" y1="-101.6" x2="210.82" y2="195.58" width="0.1524" layer="94"/>
 <wire x1="210.82" y1="195.58" x2="-172.72" y2="195.58" width="0.1524" layer="94"/>
+<text x="-165.1" y="-96.52" size="5.08" layer="95">Designed by Seth Kerr
+06/21/2020</text>
+<text x="-167.64" y="185.42" size="5.08" layer="95">MSP432P401R Feather Board</text>
 </plain>
 <instances>
 <instance part="IC1" gate="1" x="121.92" y="55.88" smashed="yes">
@@ -12756,6 +12759,16 @@ N-Channel Logic Level Enhancement Mode Field Effect Transistor</description>
 <wire x1="-22.86" y1="-66.04" x2="-25.4" y2="-66.04" width="0.1524" layer="91"/>
 <label x="-25.4" y="-66.04" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="C17" gate="G$1" pin="2"/>
+<wire x1="-73.66" y1="177.8" x2="-76.2" y2="177.8" width="0.1524" layer="91"/>
+<label x="-76.2" y="177.8" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="C16" gate="G$1" pin="2"/>
+<wire x1="-12.7" y1="177.8" x2="-12.7" y2="172.72" width="0.1524" layer="91"/>
+<label x="-12.7" y="172.72" size="1.778" layer="95" rot="R270" xref="yes"/>
+</segment>
 </net>
 <net name="+3.3V" class="1">
 <segment>
@@ -12965,36 +12978,30 @@ N-Channel Logic Level Enhancement Mode Field Effect Transistor</description>
 <pinref part="PWR" gate="G$1" pin="A"/>
 </segment>
 </net>
-<net name="N$45" class="0">
-<segment>
-<pinref part="C17" gate="G$1" pin="1"/>
-<wire x1="-60.96" y1="177.8" x2="-66.04" y2="177.8" width="0.1524" layer="91"/>
-<pinref part="Y1" gate="G$1" pin="IN/OUT"/>
-</segment>
-</net>
-<net name="N$46" class="0">
-<segment>
-<pinref part="C16" gate="G$1" pin="1"/>
-<wire x1="-20.32" y1="177.8" x2="-25.4" y2="177.8" width="0.1524" layer="91"/>
-<pinref part="Y1" gate="G$1" pin="OUT/IN"/>
-</segment>
-</net>
 <net name="N$47" class="0">
 <segment>
-<pinref part="C16" gate="G$1" pin="2"/>
-<wire x1="-12.7" y1="177.8" x2="-30.48" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="PJ.2/HFXOUT"/>
 <wire x1="-30.48" y1="154.94" x2="-30.48" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="-30.48" y1="121.92" x2="-33.02" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="C16" gate="G$1" pin="1"/>
+<wire x1="-20.32" y1="177.8" x2="-25.4" y2="177.8" width="0.1524" layer="91"/>
+<pinref part="Y1" gate="G$1" pin="OUT/IN"/>
+<wire x1="-30.48" y1="154.94" x2="-25.4" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="-25.4" y1="154.94" x2="-25.4" y2="177.8" width="0.1524" layer="91"/>
+<junction x="-25.4" y="177.8"/>
 </segment>
 </net>
 <net name="N$48" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="PJ.3/HFXIN"/>
 <wire x1="-38.1" y1="121.92" x2="-38.1" y2="124.46" width="0.1524" layer="91"/>
-<pinref part="C17" gate="G$1" pin="2"/>
-<wire x1="-38.1" y1="124.46" x2="-58.42" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="-58.42" y1="124.46" x2="-73.66" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="124.46" x2="-63.5" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="C17" gate="G$1" pin="1"/>
+<wire x1="-60.96" y1="177.8" x2="-63.5" y2="177.8" width="0.1524" layer="91"/>
+<pinref part="Y1" gate="G$1" pin="IN/OUT"/>
+<wire x1="-63.5" y1="177.8" x2="-66.04" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="-63.5" y1="124.46" x2="-63.5" y2="177.8" width="0.1524" layer="91"/>
+<junction x="-63.5" y="177.8"/>
 </segment>
 </net>
 <net name="VIN" class="1">
@@ -13529,19 +13536,7 @@ N-Channel Logic Level Enhancement Mode Field Effect Transistor</description>
 <label x="12.7" y="129.54" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="P4.4" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="P4.3/MCLK/RTCCLK/A10"/>
-<wire x1="30.48" y1="15.24" x2="35.56" y2="15.24" width="0.1524" layer="91"/>
-<label x="35.56" y="15.24" size="1.778" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="X2" gate="-4" pin="1"/>
-<wire x1="-66.04" y1="-59.69" x2="-66.04" y2="-58.42" width="0.1524" layer="91"/>
-<label x="-66.04" y="-58.42" size="1.778" layer="95" rot="R90"/>
-</segment>
-</net>
-<net name="P4.3" class="0">
+<net name="P4.2" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="P4.2/ACLK/TA2CLK/A11"/>
 <wire x1="30.48" y1="10.16" x2="35.56" y2="10.16" width="0.1524" layer="91"/>
@@ -13553,12 +13548,28 @@ N-Channel Logic Level Enhancement Mode Field Effect Transistor</description>
 <label x="-68.58" y="-58.42" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
+<net name="P4.3" class="0">
+<segment>
+<pinref part="X2" gate="-4" pin="1"/>
+<wire x1="-66.04" y1="-59.69" x2="-66.04" y2="-58.42" width="0.1524" layer="91"/>
+<label x="-66.04" y="-58.42" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="P4.3/MCLK/RTCCLK/A10"/>
+<wire x1="30.48" y1="15.24" x2="35.56" y2="15.24" width="0.1524" layer="91"/>
+<label x="35.56" y="15.24" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
 </schematic>
 </drawing>
 <compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
