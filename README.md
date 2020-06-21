@@ -2,6 +2,8 @@
 
 Welcome to the public repository for my MSP432P401R feather board design. There are just a few things that should be considered when working with this design. 
 
+<image src="https://github.com/skerr92/msp432-feather/blob/master/images/Screen%20Shot%202020-06-21%20at%201.09.43%20PM.png">
+
 # 1
 
 The design is open for revision. If you have experience with PCB design and would like to contribue, I encourage you to do so! Simply create a fork of the repository and you're good to go!
