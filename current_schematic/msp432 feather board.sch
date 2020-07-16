@@ -12561,6 +12561,10 @@ N-Channel Logic Level Enhancement Mode Field Effect Transistor</description>
 <wire x1="106.68" y1="38.1" x2="106.68" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="22.86" x2="139.7" y2="22.86" width="0.1524" layer="91"/>
 <junction x="139.7" y="22.86"/>
+<pinref part="IC1" gate="1" pin="TEST"/>
+<wire x1="137.16" y1="40.64" x2="139.7" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="40.64" x2="139.7" y2="35.56" width="0.1524" layer="91"/>
+<junction x="139.7" y="35.56"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="P5.7/TA2.2/VREF-/VEREF-/C1.6"/>
