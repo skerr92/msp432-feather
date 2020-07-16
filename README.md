@@ -4,9 +4,13 @@ Welcome to the public repository for my MSP432P401R feather board design. There 
 
 <image src="https://github.com/skerr92/msp432-feather/blob/master/images/Screen%20Shot%202020-06-21%20at%201.09.43%20PM.png">
 
-# Update: If you choose to manufacture the current board uploaded read this first:
+# Update (07-11-2020): If you choose to manufacture the current board uploaded read this first (fixed):
 
-The current schematic is working to be updated following an issue with the FT232RL USB to UART chip. This is easy to overcome when assembling the current board, simply bridge pins 25 and 26 on the board. This ensures that pin 25 (TEST) is tied to pin 26 (GND). According to the FT232R datasheet, the chip won't be recognized because the test pin is floating. This will be corrected in the next revision.
+The old schematic is working to be updated following an issue with the FT232RL USB to UART chip. This is easy to overcome when assembling the current board, simply bridge pins 25 and 26 on the board. This ensures that pin 25 (TEST) is tied to pin 26 (GND). According to the FT232R datasheet, the chip won't be recognized because the test pin is floating. This will be corrected in the next revision.
+
+# Update (07-16-2020)
+
+The schematic and board files were fixed related to the floating TEST pin on the FT232RL IC.
 
 # 1
 
