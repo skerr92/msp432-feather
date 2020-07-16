@@ -12,6 +12,10 @@ The old schematic is working to be updated following an issue with the FT232RL U
 
 The schematic and board files were fixed related to the floating TEST pin on the FT232RL IC.
 
+# Get started today
+
+You can get started by ordering the board from OshPark --> <a href="https://oshpark.com/shared_projects/jjmrRj4x">MSP432 Boards on OshPark</a>
+
 # 1
 
 The design is open for revision. If you have experience with PCB design and would like to contribue, I encourage you to do so! Simply create a fork of the repository and you're good to go!
