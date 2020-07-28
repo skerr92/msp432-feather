@@ -2,7 +2,7 @@
 
 Welcome to the public repository for my MSP432P401R feather board design. There are just a few things that should be considered when working with this design. 
 
-<image src="https://github.com/skerr92/msp432-feather/blob/master/images/Screen%20Shot%202020-06-21%20at%201.09.43%20PM.png">
+<image src="images/Screen Shot 2020-07-28 at 7.55.07 PM.png">
   
 # Update (07-28-2020): Fixed issues with bad footprint for FT232RL chip
 
