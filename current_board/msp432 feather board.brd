@@ -3,7 +3,7 @@
 <eagle version="9.5.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="1" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
@@ -3705,9 +3705,6 @@ design rules under a new name.</description>
 </signal>
 <signal name="DM">
 <contactref element="IC1" pad="16"/>
-<contactref element="J1" pad="3"/>
-<wire x1="5.215" y1="11.43" x2="6.3754" y2="11.43" width="0.2032" layer="1"/>
-<wire x1="6.3754" y1="11.43" x2="6.7056" y2="11.0998" width="0.2032" layer="1"/>
 <via x="6.7056" y="11.0998" extent="1-16" drill="0.254"/>
 <wire x1="6.7056" y1="11.0998" x2="9.2202" y2="8.5852" width="0.2032" layer="16"/>
 <wire x1="20.3838125" y1="7.7034" x2="20.4338125" y2="7.7534" width="0.2032" layer="16"/>
@@ -3717,20 +3714,25 @@ design rules under a new name.</description>
 <wire x1="20.447" y1="7.7343" x2="21.6916" y2="7.7343" width="0.2032" layer="16"/>
 <wire x1="21.6916" y1="7.7343" x2="21.7694" y2="7.7534" width="0.2032" layer="16"/>
 <wire x1="20.447" y1="7.7343" x2="20.3838125" y2="7.7034" width="0.2032" layer="16"/>
+<contactref element="J1" pad="2"/>
+<wire x1="6.144" y1="11.6614" x2="6.144" y2="11.7352125" width="0.2032" layer="1"/>
+<wire x1="6.144" y1="11.7352125" x2="5.7992125" y2="12.08" width="0.2032" layer="1"/>
+<wire x1="5.7992125" y1="12.08" x2="5.215" y2="12.08" width="0.2032" layer="1"/>
+<wire x1="6.7056" y1="11.0998" x2="6.144" y2="11.6614" width="0.2032" layer="1"/>
 </signal>
 <signal name="DP">
 <contactref element="IC1" pad="15"/>
-<contactref element="J1" pad="2"/>
 <wire x1="17.0755875" y1="7.1034" x2="15.9493875" y2="8.2296" width="0.2032" layer="16"/>
 <wire x1="15.9493875" y1="8.2296" x2="6.0198" y2="8.2296" width="0.2032" layer="16"/>
-<wire x1="3.9726" y1="10.2768" x2="3.9726" y2="12.0396" width="0.2032" layer="16"/>
-<via x="3.9726" y="12.0396" extent="1-16" drill="0.254"/>
-<wire x1="3.9726" y1="12.0396" x2="4.013" y2="12.08" width="0.2032" layer="1"/>
-<wire x1="4.013" y1="12.08" x2="5.215" y2="12.08" width="0.2032" layer="1"/>
-<wire x1="6.0198" y1="8.2296" x2="3.9726" y2="10.2768" width="0.2032" layer="16"/>
+<wire x1="4.0234" y1="10.226" x2="4.0234" y2="11.43" width="0.2032" layer="16"/>
+<via x="4.0234" y="11.43" extent="1-16" drill="0.254"/>
+<wire x1="4.0234" y1="11.43" x2="4.0638" y2="11.4704" width="0.2032" layer="1"/>
+<wire x1="6.0198" y1="8.2296" x2="4.0234" y2="10.226" width="0.2032" layer="16"/>
 <wire x1="17.1577" y1="7.112" x2="21.6916" y2="7.112" width="0.2032" layer="16"/>
 <wire x1="21.6916" y1="7.112" x2="21.7694" y2="7.1034" width="0.2032" layer="16"/>
 <wire x1="17.1577" y1="7.112" x2="17.0755875" y2="7.1034" width="0.2032" layer="16"/>
+<contactref element="J1" pad="3"/>
+<wire x1="4.0234" y1="11.43" x2="5.215" y2="11.43" width="0.2032" layer="1"/>
 </signal>
 <signal name="TMS">
 <contactref element="U$1" pad="63"/>
